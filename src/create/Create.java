@@ -38,9 +38,10 @@ public class Create {
 					+ "id int(11) NOT NULL AUTO_INCREMENT,"
 					+ "username varchar(25) NOT NULL,"
 					+ "password varchar(20) NOT NULL,"
-					+ "nickname varchar(35),"
+					+ "nickname varchar(35) NOT NULL,"
 					+ "won int(11) NOT NULL,"
 					+ "lost int(11) NOT NULL,"
+					+ "enabled boolean NOT NULL,"
 					+ "PRIMARY KEY (id));");
 			JOptionPane.showMessageDialog(null, "La base de datos se creo en el servidor, si no existia.", "Exito", JOptionPane.PLAIN_MESSAGE);
 		} catch (IOException e) {
